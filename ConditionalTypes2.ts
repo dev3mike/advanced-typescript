@@ -1,9 +1,3 @@
-/**
- * Define a type 'Locations' that represents a union of specific location strings.
- * Each location is a combination of a city and a country, separated by a slash.
- * This type is used to limit the acceptable values for location-related functions,
- * ensuring that only these predefined locations can be used.
- */
 type Locations = 'Gothenburg/Sweden' | 'Berlin/Germany' | 'Istanbul/Turkey';
 
 /**
