@@ -27,7 +27,7 @@ type ActionKeys = keyof Actions;
  * The resulting type will map each original action to a new callback function type, maintaining the void return.
  */
 type ActionCallbacks = {
-    [Key in ActionKeys as `on${Capitalize<Key>}`]: () => void
+    [Key in ActionKeys as `on${Capitalize<Key>}`]?: () => void
 }
 
 /**
