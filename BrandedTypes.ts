@@ -38,7 +38,7 @@ function validateFunction(input: string): boolean {
 }
 
 // Creating a branded type for emails using the `BrandedType` function.
-const [isEmail, validEmailObject] = BrandedType(validateFunction, 'ValidEmail');
+const [isEmail, validEmailObject] = BrandedType(validateFunction, 'ValidEmail' as const);
 // `ValidEmailType` is now a distinct type, representing a string that has been validated as an email.
 type ValidEmailType = typeof validEmailObject;
 
